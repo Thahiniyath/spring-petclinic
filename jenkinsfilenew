@@ -1,0 +1,9 @@
+{
+    stage('git clone') { 
+        git branch: 'main', url: 'https://github.com/Thahiniyath/spring-petclinic.git'
+    }
+    stage('generate a package') {
+        sh 'mvn package'
+    }
+    
+}
